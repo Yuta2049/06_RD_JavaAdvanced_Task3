@@ -3,9 +3,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(value=ElementType.METHOD)
-@Retention(value=RetentionPolicy.RUNTIME)
+@Target(value = ElementType.METHOD)
+@Retention(value = RetentionPolicy.RUNTIME)
 public @interface Secured {
     int one();
+
     String two() default "strict";
 }

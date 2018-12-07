@@ -1,16 +1,16 @@
 public class Entity {
 
-    @Secured(one=1)
-    public void publicMethod() {
-
+    @Secured(one = 1)
+    public void publicMethodFirst() {
     }
 
-    @Secured(one=2, two = "two")
-    private void privateMethod() {
-
+    @Secured(one = 2, two = "two")
+    private void privateMethodFirst() {
     }
 
-    protected void protectedMethod() {
+    private void privateMethodSecond(String stringParameter1) {
+    }
 
+    protected void protectedMethodFirst() {
     }
 }
