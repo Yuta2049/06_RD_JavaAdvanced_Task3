@@ -4,13 +4,11 @@ import java.lang.reflect.Modifier;
 
 public class TestService {
 
-
     public void test() {
 
         try {
 
             Class clazz = Class.forName("Entity");
-
             Method[] methods = clazz.getDeclaredMethods();
 
             System.out.println("МЕТОДЫ КЛАССА Entity");
@@ -41,7 +39,5 @@ public class TestService {
             System.out.println("Не найден класс");
             System.out.println(ex.getMessage());
         }
-
     }
-
 }
